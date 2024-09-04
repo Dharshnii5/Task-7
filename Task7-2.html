@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.resume-container {
+    width: 800px;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-left h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-left p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #f4b400;
+   
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+section {
+    margin-bottom: 20px;
+}
+}
+
+.left-column{
+    width: 48%;
+}
+ .right-column {
+    width: 48%;
+}
+
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #f4b400;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.technical-skills, .additional-skills {
+    flex: 0 0 48%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.skill-bar .filled {
+    height: 100%;
+    background-color: #f4b400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.job, .degree {
+    margin-bottom: 20px;
+}
+
+.job h3, .degree h3 {
+    font-size: 1.2em;
+    margin: 0 0 5px;
+}
+
+.job p, .degree p {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.job ul, .degree ul {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-container {
+        padding: 15px;
+    }
+    
+    .header-left h1 {
+        font-size: 1.8em;
+    }
+    
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+}
+    </style>
+    <title>Brian Dudey Resume</title>
+</head>
+<body>
+    <div class="resume-container">
+      
+        <header class="resume-header">
+            <div class="header-left">
+                <h1>BRIAN DUDEY</h1>
+                <p>N. Damen Avenue, Chicago 99999 | 999-999-9999 | hello@kickresume.com | www.kickresume.com</p>
+            </div>
+            <div class="header-right">
+                <img src="c:\Users\vasan\OneDrive\Pictures\Screenshots\bd.png">
+            </div>
+        </header>
+        
+        <section class="profile">
+            <div class="main-content">
+                <div class="left-column">
+            <h2><img src="c:\Users\vasan\OneDrive\Pictures\Screenshots\profile .jpg" class="icon" alt="Profile Icon"> Profile</h2>
+            <p>Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous, assiduous, animated, and an alliteration advocate.</p>
+        </section>
+        
+        <section class="skills">
+            <h2><img src="c:\Users\vasan\OneDrive\Pictures\Screenshots\Skill.jpg" class="icon" alt="Skills Icon"> Skills</h2>
+            <div class="skills-container">
+                <div class="technical-skills">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>JavaScript <span class="skill-bar"><span class="filled" style="width: 80%;"></span></span></li>
+                        <li>CSS <span class="skill-bar"><span class="filled" style="width: 80%;"></span></span></li>
+                        <li>HTML <span class="skill-bar"><span class="filled" style="width: 75%;"></span></span></li>
+                        <li>React <span class="skill-bar"><span class="filled" style="width: 70%;"></span></span></li>
+                        <li>Redux <span class="skill-bar"><span class="filled" style="width: 70%;"></span></span></li>
+                        <li>Mongo <span class="skill-bar"><span class="filled" style="width: 60%;"></span></span></li>
+                        <li>Deployment <span class="skill-bar"><span class="filled" style="width: 50%;"></span></span></li>
+                    </ul>
+                </div>
+                <div class="additional-skills">
+                    <h3>Additional Skills</h3>
+                    <ul>
+                        <li>Project Management <span class="skill-bar"><span class="filled" style="width: 75%;"></span></span></li>
+                        <li>Recruitment <span class="skill-bar"><span class="filled" style="width: 70%;"></span></span></li>
+                        <li>Business Development <span class="skill-bar"><span class="filled" style="width: 65%;"></span></span></li>
+                        <li>Editing <span class="skill-bar"><span class="filled" style="width: 60%;"></span></span></li>
+                        <li>Fundraising <span class="skill-bar"><span class="filled" style="width: 50%;"></span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      
+        <section class="work-experience">
+            <div class="main-content">
+            <div class="right-column">
+            <h2><img src="c:\Users\vasan\OneDrive\Pictures\Screenshots\work.jpg" class="icon" alt="Work Icon"> Work Experience</h2>
+            <div class="job">
+                <h3>Community Relations Manager</h3>
+                <p>Gay & Lesbian Elder Housing, Los Angeles | 06/2011 – 01/2014</p>
+                <ul>
+                    <li>Arranging presentations and pitch deck.</li>
+                    <li>Designing a PR plan and establishing important focus points.</li>
+                    <li>Designing, creating, and managing content across multiple communication platforms.</li>
+                    <li>Building relationships with key media players.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Event Manager</h3>
+                <p>C3 Presents, Washington DC | 03/2014 – 02/2017</p>
+                <ul>
+                    <li>Lead and execute all phases of event planning and production spanning committee recruitment, training, vendor relationships, and on-site facilitation.</li>
+                    <li>Brought new business to the organization through relentless networking and stewardship.</li>
+                    <li>Exercise fiscal control over budget creation, tracking, and reporting.</li>
+                </ul>
+            </div>
+        </section>
+
+       
+        <section class="education">
+            <h2><img src="c:\Users\vasan\OneDrive\Pictures\Screenshots\education.jpg" class="icon" alt="Education Icon"> Education</h2>
+            <div class="degree">
+                <h3>Engineering Immersion Program</h3>
+                <p>Thinkful, Chicago, IL | 11/2018 – 06/2018</p>
+                <p>Project-focused intensive program with emphasis on Mongo, Express, React, and JavaScript (MERN) technical stack.</p>
+                <ul>
+                    <li>Developed a full-stack web application, "RenewU", using React.</li>
+                    <li>Developed a language learning app, "Foodie Phonetics" using spaced repetition and a linked list data structure.</li>
+                    <li>Developed a concierge app, "Pley", for curated suggestions when visiting a new place.</li>
+                </ul>
+            </div>
+            <div class="degree">
+                <h3>BA, English</h3>
+                <p>University of California, Los Angeles | 09/2001 – 09/2005</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
